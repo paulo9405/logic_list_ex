@@ -14,13 +14,38 @@
     escrever a soma dos valores encontrados nas respectivas posições X e Y.
 </p>
 
-    <h4>X: {{x}} </h4>
-    <h4>Y: {{y}} </h4>
-    <h4>Soma de X + Y: {{s}} </h4>
+    <form action="" method="POST">
+        {% csrf_token %}
 
-    <input type="button" value="Refresh" onClick="window.location.reload()"> <br>
+        <label for="value_1">Value 1:</label>
+        <input type="number" name="value_1" required> <br><br>
 
-    <a href="{% url 'home' %}">Back to list</a>
+        <label for="value_2">Value 2:</label>
+        <input type="number" name="value_2" required> <br><br>
+
+        <label for="value_3">Value 3:</label>
+        <input type="number" name="value_3" required> <br><br>
+
+        <label for="value_4">Value 4:</label>
+        <input type="number" name="value_4" required> <br><br>
+
+        <label for="x">Value position to X:</label>
+        <input type="number" name="value_x" id="x" required> <br><br>
+
+        <label for="y">Value position to Y:</label>
+        <input type="number" name="value_y" id="y" required> <br><br>
+
+        <input type="submit">
+    </form>
+
+<h4>
+List: {{list_value}} <br>
+
+Position x {{x}}: {{x_p}} <br>
+Position y {{y}}: {{y_p}} <br>
+
+Sum position x + position y = {{sum}}
+</h4>
 
 
 </body>
