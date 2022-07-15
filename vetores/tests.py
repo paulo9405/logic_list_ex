@@ -38,12 +38,8 @@ print("A soma é",tabela[primeiro-1]+tabela[segundo-1])
 #
 # print([word.strip() for word in words if word.strip() != ""])
 
-a = ['1', ' ', ',', '3', ',', ' ', '9']
+a = '1, 2, 8, 14, 49'
+b = a.split(",")
 
-# a.remove(',')
-# print(a)
 
-for i in a:
-    if i == ',' or i == ' ':
-        a.remove(i)
-print(a)
+print(b[1])

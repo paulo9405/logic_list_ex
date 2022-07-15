@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from random import random, randrange
 
 
 def home(request):
@@ -15,11 +14,8 @@ def ex1(request):
     sum = None
 
     if request.method == "POST":
-        value_1 = list(request.POST.get('value_1'))
-        list_value = [val.strip() for val in value_1 if val.strip() != ""]
-        for i in list_value:
-            if i == ',':
-                list_value.remove(i)
+        value_1 = request.POST.get('value_1')
+        list_value = value_1.split(",")
 
         x = int(request.POST.get('value_x'))
         y = int(request.POST.get('value_y'))
