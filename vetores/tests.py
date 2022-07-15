@@ -27,9 +27,23 @@ print("O elemento",segundo,"vale",tabela[segundo-1])
 print("A soma é",tabela[primeiro-1]+tabela[segundo-1])
 '''
 
-data = []
-n = int(input('Enter how many elements you want: '))
-for i in range(0, 3):
-    x = input('Enter the numbers into the array: ')
-    data.append(x)
-print(data)
+# data = []
+# n = int(input('Enter how many elements you want: '))
+# for i in range(0, 3):
+#     x = input('Enter the numbers into the array: ')
+#     data.append(x)
+# print(data)
+
+# words = ["a ", "\n", "",  "ok\n", "\n", ""]
+#
+# print([word.strip() for word in words if word.strip() != ""])
+
+a = ['1', ' ', ',', '3', ',', ' ', '9']
+
+# a.remove(',')
+# print(a)
+
+for i in a:
+    if i == ',' or i == ' ':
+        a.remove(i)
+print(a)
