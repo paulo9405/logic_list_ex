@@ -44,6 +44,7 @@ def ex2(request):
 
 def ex3(request):
     vet = []
+    a = None
     if request.method == 'POST':
         value_1 = request.POST.get('value_x')
         vet = value_1.split(",")
