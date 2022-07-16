@@ -50,6 +50,6 @@ def ex3(request):
         div = int(len(vet) / 2)
         a = [vet[div:], vet[:div]]
         if len(vet) > 4 or len(vet) < 4:
-            erro = 'Plase write exactly 4 values.'
+            erro = 'Plase write exactly 4 values separated by comma.'
             return render(request, 'ex3.html', {'erro': erro})
     return render(request, 'ex3.html', {'vet': vet, 'a': a})
