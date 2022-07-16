@@ -1,10 +1,11 @@
-vet = [] # define um vetor vazio
-# for i in range(len(10), 1) : # ou mais simples neste caso "for i in range(n)"
-#   vet.append(1+i)
 
-for i in range(5, 20):
-    if i%2 == 1:
-        vet.append(i)
+a = ['1', '2', '3', '4', '5', '6']
 
+b = [a[3], a[4], a[5], a[0], a[1], a[2], ]
 
-print(vet)
+c = int(len(a)/2)
+
+if len(a) % 2 == 1:
+    print(False)
+
+print([a[c:], a[:c]])
