@@ -8,18 +8,39 @@
 #
 # print(b)
 
+#
+# a = [-2, 3, 7, -5]
+t = ['-2', '3', '7', '-5']
+# b = []
+# c = []
+# #
+# s = t.replace('-2', '0')
+# print(s)
 
-a = ['1', '2', '3', '4', '9', '8', '16', '15']
-a_int = []
+# for i in a:
+#     if i < 0:
+#         c = i
+#
+#         c.append(c)
 
-count = 0
-for i in a:
-    a_int.append(int(i))
+a = [-2, 3, 7, -5]
 
-for i in a_int:
-    if i%2 == 0:
-        count += 1
+# a = [i.replace(-2, 0) for i in a ]
+#
+# print(a)
+#
+# x = '0'
+# y = 1
+#
+# if y > x:
+#     print('X e maior')
 
-print(a_int)
+# my_list=[-5,-10,7,5,6,-8,5,15]
+my_list = [-2, 3, 7, -5]
+for index, value in enumerate(my_list):
+    if value < 0:
+      my_list[index] = 0
 
-print(count)
+print(my_list)
+
+
