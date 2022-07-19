@@ -35,12 +35,55 @@ a = [-2, 3, 7, -5]
 # if y > x:
 #     print('X e maior')
 
-# my_list=[-5,-10,7,5,6,-8,5,15]
-my_list = [-2, 3, 7, -5]
-for index, value in enumerate(my_list):
-    if value < 0:
-      my_list[index] = 0
+# a = [1, 2, 3]
+#
+# b = [20, 21, 22]
+#
+# # c = [None, None, None, None, None, None]
+# c = [0]*6
 
-print(my_list)
+
+# for i in c:
+#     if c.index(i) % 2 == 0:
+#         for d in a:
+#             i = d
+
+'''try ex 7'''
+# for index, v in enumerate(c):
+#     t = []
+#     t = index
+#
+# #     # else:
+#     #     for e in b:
+#     #         c[index] = e
+#
+# print(t)
+#
+# print(c)
+# # 0 2 4 | 1 3 5
+
+
+a = [0, 2, 4, 6, 8]
+
+b = [1, 3, 5, 7, 9]
+
+c = []
+
+va = 0
+vb = 0
+
+for i in range(0, 10):
+    if i % 2 == 0:
+        c.append(a[va])
+        va += 1
+
+    else:
+        c.append(b[vb])
+        vb += 1
+
+
+print(c)
+
+
 
 
