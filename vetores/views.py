@@ -142,8 +142,16 @@ def ex7(request):
         else:
             vet_list_3.append(vet_list_2[point_vet2])
             point_vet2 += 1
-        # vet_list_3.append(vet_list_1[i])
-        # vet_list_3.append(vet_list_2[i])
+
     return render(request, 'ex7.html', {'vet_list_3': vet_list_3,
                                         'vet_list_1': vet_list_1,
                                         'vet_list_2': vet_list_2})
+
+def ex9(request):
+    value = None
+    value_without_space = None
+    if request.method == "POST":
+        value = request.POST.get('value')
+        value_without_space = value.replace(" ", "")
+    return render(request, 'ex9.html', {'value_without_space': value_without_space,
+                                        'value': value})
