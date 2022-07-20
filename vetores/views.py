@@ -147,6 +147,7 @@ def ex7(request):
                                         'vet_list_1': vet_list_1,
                                         'vet_list_2': vet_list_2})
 
+
 def ex9(request):
     value = None
     value_without_space = None
@@ -155,3 +156,18 @@ def ex9(request):
         value_without_space = value.replace(" ", "")
     return render(request, 'ex9.html', {'value_without_space': value_without_space,
                                         'value': value})
+
+from num2words import num2words
+
+
+def ex10(request):
+    value = []
+    vet_list = []
+
+    if request.method == "POST":
+        value = request.POST.get('value').split(",")
+
+        for i in range(0, len(value)):
+            vet_list.append(num2words(value[i], lang='en'))
+
+    return render(request, 'ex10.html', {'vet_list': vet_list, 'value': value})

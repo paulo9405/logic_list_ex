@@ -1,18 +1,19 @@
+from num2words import num2words
 
-
-
-
-# words = ["a\n", "\n", "ok\n", "\n", "", 'adas adfasd we']
+# numero = input('Digite um número: ')
 #
-print([word.strip() for word in words if word.strip() != ""])
+# num_ptbr = num2words(numero, lang='en')
+# print(f'Número: {num_ptbr}')
+#
+# print(type(numero))
 
 
-a = "  hello  apple  "
+list1 = ['0', '20', '16', '10', '20']
+list2 = []
 
-b = "a b c d"
+for i in range(0, len(list1)):
+    list2.append(num2words(list1[i], lang='en'))
 
-b  = b.replace(" ", "")
+print(list2)
 
-print(b)
 
-'helloapple'
