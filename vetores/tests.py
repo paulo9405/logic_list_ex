@@ -1,89 +1,62 @@
-# a = ['1', ' 2', ' 3', ' 4', ' 9']
+# a = 'paulo'
 #
-# b = []
+# a = a.re
+
+'''
+str = "rua"
+
+b = "rua"
+
+a = "arara"
+
+reversed_string=''.join(reversed(str))
+
+print(reversed_string)
+
+if reversed_string == b:
+    print('E um anagrama')
+else:
+    print('Nao e anagrama')
+'''
+
+
+
+
+# v1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# v2 = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+# v3 = [21, 22, 23, 24, 25, 26, 27, 28, 29]
 #
+# v4 = [1, 2, 3]
+# v5 = [11, 12, 13]
+# v6 = [21, 22, 23]
+#
+#
+# # s = len(a) / 3
+# b = v1[:3], v2[6:], v3[6:]
+#
+# a = v4[:1], v5[2:], v6[2:]
+#
+# print('B :', b)
+#
+# print('A: ', a)
+
+v1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+v2 = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+v3 = [21, 22, 23, 24, 25, 26, 27, 28, 29]
+
+a = []
+
 # for i in a:
-#     c = i.replace(' ', '')
-#     b.append(c)
-#
-# print(b)
+for v11 in v1:
+    a[:3] = v1[:3]
 
-#
-# a = [-2, 3, 7, -5]
-t = ['-2', '3', '7', '-5']
-# b = []
-# c = []
-# #
-# s = t.replace('-2', '0')
-# print(s)
+for v22 in v2:
+    a[3:6] = v2[3:6]
 
-# for i in a:
-#     if i < 0:
-#         c = i
-#
-#         c.append(c)
+for v33 in v3:
+    a[6:] = v3[6:]
 
-a = [-2, 3, 7, -5]
+print('A: ', a)
 
-# a = [i.replace(-2, 0) for i in a ]
-#
-# print(a)
-#
-# x = '0'
-# y = 1
-#
-# if y > x:
-#     print('X e maior')
-
-# a = [1, 2, 3]
-#
-# b = [20, 21, 22]
-#
-# # c = [None, None, None, None, None, None]
-# c = [0]*6
-
-
-# for i in c:
-#     if c.index(i) % 2 == 0:
-#         for d in a:
-#             i = d
-
-'''try ex 7'''
-# for index, v in enumerate(c):
-#     t = []
-#     t = index
-#
-# #     # else:
-#     #     for e in b:
-#     #         c[index] = e
-#
-# print(t)
-#
-# print(c)
-# # 0 2 4 | 1 3 5
-
-
-a = [0, 2, 4, 6, 8]
-
-b = [1, 3, 5, 7, 9]
-
-c = []
-
-va = 0
-vb = 0
-
-for i in range(0, 10):
-    if i % 2 == 0:
-        c.append(a[va])
-        va += 1
-
-    else:
-        c.append(b[vb])
-        vb += 1
-
-
-print(c)
-
-
-
+print(len(v3))
 
