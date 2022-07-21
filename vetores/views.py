@@ -147,3 +147,22 @@ def ex7(request):
     return render(request, 'ex7.html', {'vet_list_3': vet_list_3,
                                         'vet_list_1': vet_list_1,
                                         'vet_list_2': vet_list_2})
+
+
+def reversed_string(a_string):
+    return a_string[::-1]
+
+
+def ex11(request):
+    value = list
+    rever = None
+    rev = None
+    if request.method == "POST":
+        value = request.POST.get('value')
+
+        if reversed_string(value) == value:
+            rever = 'É um Anagrama'
+
+        else:
+            rev = 'Nao é um Anagrama'
+    return render(request, 'ex11.html', {'rever': rever, 'rev': rev, 'value': value})
