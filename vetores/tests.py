@@ -1,19 +1,33 @@
-from num2words import num2words
-
-# numero = input('Digite um número: ')
+# a = 'paulo'
 #
-# num_ptbr = num2words(numero, lang='en')
-# print(f'Número: {num_ptbr}')
-#
-# print(type(numero))
+# a = a.re
+
+'''
+str = "rua"
+
+b = "rua"
+
+a = "arara"
+
+reversed_string=''.join(reversed(str))
+
+print(reversed_string)
+
+if reversed_string == b:
+    print('E um anagrama')
+else:
+    print('Nao e anagrama')
+'''
+
+def reversed_string(a_string):
+    return a_string[::-1]
 
 
-list1 = ['0', '20', '16', '10', '20']
-list2 = []
+a = 'arara'
+reversed_string(a)
 
-for i in range(0, len(list1)):
-    list2.append(num2words(list1[i], lang='en'))
-
-print(list2)
-
+if reversed_string(a) == a:
+    print('E um anagrama')
+else:
+    print('Nao e anagrama')
 
