@@ -147,3 +147,19 @@ def ex7(request):
     return render(request, 'ex7.html', {'vet_list_3': vet_list_3,
                                         'vet_list_1': vet_list_1,
                                         'vet_list_2': vet_list_2})
+
+
+from num2words import num2words
+
+
+def ex10(request):
+    value = []
+    vet_list = []
+
+    if request.method == "POST":
+        value = request.POST.get('value').split(",")
+
+        for i in range(0, len(value)):
+            vet_list.append(num2words(value[i], lang='en'))
+
+    return render(request, 'ex10.html', {'vet_list': vet_list, 'value': value})
